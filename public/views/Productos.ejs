@@ -1,0 +1,21 @@
+<% for (const item of items) { %>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Imagen</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td><%= item.name %></td>
+                <td><%= item.price %></td>
+                <td><img src="<%= item.thumbnail %>" alt="${item.name}"></td>
+            </tr>
+        
+    </tbody>
+</table>
+<%};%>
+
